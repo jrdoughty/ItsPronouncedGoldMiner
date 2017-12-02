@@ -35,21 +35,22 @@ class Project {
 	public function down(mButton:Int, x:Int, y:Int)
 	{
 		chats = data.levels[activeLevel].chats;
-		if(chats.exists(chatName) && !buttonsActive)
+		if(Reflect.hasField(chats,chatName) && !buttonsActive)
 		{
-			if(chats.get(chatName).length > pointInConvArray)
+			var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
+			if(theChat.length > pointInConvArray)
 			{
-				if(chats.get(chatName)[pointInConvArray].type == "dialog")
+				if(theChat[pointInConvArray].type == "dialog")
 				{
 					trace("dialog");
 					processDialog();
 				}
-				else if (chats.get(chatName)[pointInConvArray].type == "reaction")
+				else if (theChat[pointInConvArray].type == "reaction")
 				{
 					trace("reaction");
 					processReaction();
 				}
-				else if (chats.get(chatName)[pointInConvArray].type == "choice")
+				else if (theChat[pointInConvArray].type == "choice")
 				{
 					trace("choice");
 					processChoice();
@@ -65,19 +66,20 @@ class Project {
 
 	public function processDialog()
 	{
-		if(chats.get(chatName)[pointInConvArray].texts.length > pointInTextArray)
+		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
+		if(theChat[pointInConvArray].texts.length > pointInTextArray)
 		{
-			t.content = chats.get(chatName)[pointInConvArray].char +": "+ chats.get(chatName)[pointInConvArray].texts[pointInTextArray].text;
-			if(chats.get(chatName)[pointInConvArray].texts[pointInTextArray].chat != null)
+			t.content = theChat[pointInConvArray].char +": "+ theChat[pointInConvArray].texts[pointInTextArray].text;
+			if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
 			{
-				chatName = chats.get(chatName)[pointInConvArray].texts[pointInTextArray].chat;
+				chatName = theChat[pointInConvArray].texts[pointInTextArray].chat;
 				pointInTextArray = 0;
 				pointInConvArray = 0;
 			}
 			else
 			{
 				pointInTextArray++;
-				if(pointInTextArray == chats.get(chatName)[pointInConvArray].texts.length)
+				if(pointInTextArray == theChat[pointInConvArray].texts.length)
 				{
 					pointInConvArray++;
 					pointInTextArray = 0;
@@ -88,11 +90,12 @@ class Project {
 
 	public function processReaction()
 	{
-		pointInTextArray = Math.floor(Math.random() * chats.get(chatName)[pointInConvArray].texts.length);
-		t.content = chats.get(chatName)[pointInConvArray].char +": "+ chats.get(chatName)[pointInConvArray].texts[pointInTextArray].text;
-		if(chats.get(chatName)[pointInConvArray].texts[pointInTextArray].chat != null)
+		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
+		pointInTextArray = Math.floor(Math.random() * theChat[pointInConvArray].texts.length);
+		t.content = theChat[pointInConvArray].char +": "+ theChat[pointInConvArray].texts[pointInTextArray].text;
+		if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
 		{
-			chatName = chats.get(chatName)[pointInConvArray].texts[pointInTextArray].chat;
+			chatName = theChat[pointInConvArray].texts[pointInTextArray].chat;
 			pointInConvArray = 0;
 			pointInTextArray = 0;
 		}
@@ -100,14 +103,15 @@ class Project {
 
 	public function processChoice()
 	{
+		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
 		var bs:Array<Button> = [];
 		t.content = "";
-		for(i in 0...chats.get(chatName)[pointInConvArray].texts.length)
+		for(i in 0...theChat[pointInConvArray].texts.length)
 		{
 			buttonsActive = true;
-			bs.push(new Button(75,100+i*75, 540, 60,new Sprite(Assets.images.button),chats.get(chatName)[pointInConvArray].texts[i].text,function(l:Int,j:Int,k:Int)
+			bs.push(new Button(75,100+i*75, 540, 60,new Sprite(Assets.images.button),theChat[pointInConvArray].texts[i].text,function(l:Int,j:Int,k:Int)
 				{
-					chatName = chats.get(chatName)[pointInConvArray].texts[i].chat;
+					chatName = theChat[pointInConvArray].texts[i].chat;
 					buttonsActive = false;
 					Button.clear();
 					pointInConvArray = 0;
