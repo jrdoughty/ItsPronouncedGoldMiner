@@ -21,11 +21,11 @@ class Project {
 	var diagnosis:Text = new Text("test",0,360,40);
 	var buttonsActive:Bool = false;
 	var but = Button.buttons;
-	public function new() {
-		var background = new Sprite(Assets.images.background);
-		background.x = 0;
-		background.y = 0;
-		Scene.the.addOther(background);
+	var activeBG:String = "";
+	var background:Sprite;
+
+	public function new() 
+	{
 		t = new Text("",0,0,30);
 		Mouse.get().notify(down, up, move, scroll);
 		startLevel();
@@ -122,7 +122,6 @@ class Project {
 	{
 		if(chatName == "endlevel")
 		{
-
 			for(i in data.levels[activeLevel].sprites)
 			{
 				Scene.the.removeOther(SpriteMap.the.get(i.idString));
@@ -138,7 +137,18 @@ class Project {
 
 	private function startLevel()
 	{
-		diagnosis.content = data.levels[activeLevel].days+" days since Dimentia diagnosis";
+		//diagnosis.content = data.levels[activeLevel].days+" days since Dimentia diagnosis";
+		Scene.the.clear();
+		if(data.levels[activeLevel].background != activeBG)
+		{
+			activeBG = data.levels[activeLevel].background;
+			if(background == null)
+			{
+				var imgs = Assets.images;
+				background = new Sprite(Reflect.field(Assets.images, activeBG),457,368);
+			}
+		}
+		Scene.the.addOther(background);
 		for(i in data.levels[activeLevel].sprites)
 		{
 			var s = SpriteMap.the.get(i.idString);

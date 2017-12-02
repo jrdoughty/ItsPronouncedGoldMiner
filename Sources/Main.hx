@@ -6,7 +6,7 @@ import kha.Scheduler;
 
 class Main {
 	public static function main() {
-		System.init({title: "Project", width: 1024, height: 768}, function () {
+		System.init({title: "Project", width: 800, height: 600}, function () {
 			Assets.loadEverything(function(){
 				var p = new Project();
 				System.notifyOnRender(p.render);

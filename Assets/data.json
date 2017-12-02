@@ -4,15 +4,16 @@
 		{
 			"id":0,
 			"days":-1,
+			"background":"background",
 			"sprites":[
 				{
-					"idString":"John",
+					"idString":"Player",
 					"x": 180,
 					"y": 160,
 					"frame":0
 				},
 				{
-					"idString":"Grandma",
+					"idString":"Girl1",
 					"x": 209,
 					"y": 140,
 					"frame":1
@@ -22,10 +23,10 @@
 				"main":[
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
-								"text": "(as he walks in knocking) Hey Grandma! It's John!",
+								"text": "(as he walks in knocking) Hey Girl1! It's Player!",
 								"chat": null
 							},
 							{
@@ -36,10 +37,10 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
-								"text": "Good Morning John!",
+								"text": "Good Morning Player!",
 								"chat": null
 							},
 							{
@@ -54,10 +55,10 @@
 					},
 					{
 						"type": "choice",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
-								"text":"How are you doing Grandma?",
+								"text":"How are you doing Girl1?",
 								"chat":"nothingtotell"
 							},
 							{
@@ -74,17 +75,17 @@
 				"nothingtotell":[
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
-								"text":"How are you doing Grandma?",
+								"text":"How are you doing Girl1?",
 								"chat":null
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"Well ok, there's not much for me to do but watch TV. I'm very bored...",
@@ -94,7 +95,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"Well I'd heard you'd had some trouble, you have a doctor's appointment tomorrow",
@@ -104,7 +105,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"Yes, your Aunt Shelly is picking me up at... Oh heavens what time is she...",
@@ -118,7 +119,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"(Sees sticky note on Refrigerator) Here it is...",
@@ -132,7 +133,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"2:30? Hmmm, I could have sworn it was in the morning... Oh well",
@@ -142,7 +143,7 @@
 					},
 					{
 						"type": "choice",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"I got a promotion at work!",
@@ -154,7 +155,7 @@
 				"promotion":[
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"I made producer at work!",
@@ -164,10 +165,10 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
-								"text":"That's great John!",
+								"text":"That's great Player!",
 								"chat":null
 							},
 							{
@@ -177,7 +178,7 @@
 						]
 					},{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"I know, thank you for being so supportive",
@@ -187,7 +188,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"So what does that mean you'll do?",
@@ -197,7 +198,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"Means I'll be working with lots of developers on big projects!",
@@ -215,7 +216,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"Well I hope so, hearing about you and the family is my life right now",
@@ -225,7 +226,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"I have to go, I'll be back next week",
@@ -237,7 +238,7 @@
 				"foodsucks":[
 					{
 						"type": "dialog",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
 								"text":"Is the food any better here?",
@@ -247,7 +248,7 @@
 					},
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"Its OK... Nothing to talk about",
@@ -257,10 +258,10 @@
 					},
 					{
 						"type": "choice",
-						"char":"John",
+						"char":"Player",
 						"texts":[
 							{
-								"text":"How are you doing Grandma?",
+								"text":"How are you doing Girl1?",
 								"chat":"nothingtotell"
 							},
 							{
@@ -276,15 +277,16 @@
 		{
 			"id":1,
 			"days":60,
+			"background":"background",
 			"sprites":[
 				{
-					"idString":"John",
+					"idString":"Player",
 					"x": 160,
 					"y": 180,
 					"frame":0
 				},
 				{
-					"idString":"Grandma",
+					"idString":"Girl1",
 					"x": 240,
 					"y": 140,
 					"frame":3
@@ -306,7 +308,7 @@
 				"main":[
 					{
 						"type": "dialog",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text": "You're running late today",
@@ -350,7 +352,7 @@
 					},
 					{
 						"type": "reaction",
-						"char":"Grandma",
+						"char":"Girl1",
 						"texts":[
 							{
 								"text":"You're usually here much earlier!",
