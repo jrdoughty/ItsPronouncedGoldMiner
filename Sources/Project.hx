@@ -11,169 +11,25 @@ import kha2d.Animation;
 import util.Button;
 
 class Project {
-	var activeLevel:Int = 0;
-	var chatName:String = "main";
-	var pointInConvArray:Int = 0;
-	var pointInTextArray:Int = 0;
-	var data = Data.the;
-	var chats:Map<String,Dynamic>;
-	var t:Text;
-	var diagnosis:Text = new Text("test",0,360,40);
-	var buttonsActive:Bool = false;
-	var but = Button.buttons;
-	var activeBG:String = "";
-	var background:Sprite;
+
+	
+	public static var the(get, null):Project;
+	public var credits:Int = 1000;
 
 	public function new() 
 	{
-		t = new Text("",0,0,30);
-		Mouse.get().notify(down, up, move, scroll);
-		startLevel();
-		util.ButtonManager.the;
+		new RPGDate();
 	}
 
-	public function down(mButton:Int, x:Int, y:Int)
+	private static function get_the():Project
 	{
-		chats = data.levels[activeLevel].chats;
-		if(Reflect.hasField(chats,chatName) && !buttonsActive)
+		if(the == null)
 		{
-			var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
-			if(theChat.length > pointInConvArray)
-			{
-				if(theChat[pointInConvArray].type == "dialog")
-				{
-					trace("dialog");
-					processDialog();
-				}
-				else if (theChat[pointInConvArray].type == "reaction")
-				{
-					trace("reaction");
-					processReaction();
-				}
-				else if (theChat[pointInConvArray].type == "choice")
-				{
-					trace("choice");
-					processChoice();
-				}
-				checkForEndLevel();
-			}
+			the = new Project();
 		}
-		else
-		{
-			trace("chat name is " + chatName +" and buttons are considered "+(buttonsActive?"active":"deactivated"));
-		}
+		return the;
 	}
 
-	public function processDialog()
-	{
-		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
-		if(theChat[pointInConvArray].texts.length > pointInTextArray)
-		{
-			t.content = theChat[pointInConvArray].char +": "+ theChat[pointInConvArray].texts[pointInTextArray].text;
-			if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
-			{
-				chatName = theChat[pointInConvArray].texts[pointInTextArray].chat;
-				pointInTextArray = 0;
-				pointInConvArray = 0;
-			}
-			else
-			{
-				pointInTextArray++;
-				if(pointInTextArray == theChat[pointInConvArray].texts.length)
-				{
-					pointInConvArray++;
-					pointInTextArray = 0;
-				}
-			}
-		}
-	}
-
-	public function processReaction()
-	{
-		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
-		pointInTextArray = Math.floor(Math.random() * theChat[pointInConvArray].texts.length);
-		t.content = theChat[pointInConvArray].char +": "+ theChat[pointInConvArray].texts[pointInTextArray].text;
-		if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
-		{
-			chatName = theChat[pointInConvArray].texts[pointInTextArray].chat;
-			pointInConvArray = 0;
-			pointInTextArray = 0;
-		}
-	}
-
-	public function processChoice()
-	{
-		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
-		var bs:Array<Button> = [];
-		t.content = "";
-		for(i in 0...theChat[pointInConvArray].texts.length)
-		{
-			buttonsActive = true;
-			bs.push(new Button(75,100+i*75, 540, 60,new Sprite(Assets.images.button),theChat[pointInConvArray].texts[i].text,function(l:Int,j:Int,k:Int)
-				{
-					chatName = theChat[pointInConvArray].texts[i].chat;
-					buttonsActive = false;
-					Button.clear();
-					pointInConvArray = 0;
-					pointInTextArray = 0;
-					checkForEndLevel();
-					down(l,j,k);
-				},16));
-		}
-	}
-
-	public function checkForEndLevel()
-	{
-		if(chatName == "endlevel")
-		{
-			for(i in data.levels[activeLevel].sprites)
-			{
-				Scene.the.removeOther(SpriteMap.the.get(i.idString));
-			}
-			pointInConvArray = 0;
-			pointInTextArray = 0;
-			activeLevel++;
-			chatName = "main";
-			trace("level is now "+activeLevel);
-			startLevel();
-		}
-	}
-
-	private function startLevel()
-	{
-		//diagnosis.content = data.levels[activeLevel].days+" days since Dimentia diagnosis";
-		Scene.the.clear();
-		if(data.levels[activeLevel].background != activeBG)
-		{
-			activeBG = data.levels[activeLevel].background;
-			if(background == null)
-			{
-				var imgs = Assets.images;
-				background = new Sprite(Reflect.field(Assets.images, activeBG),457,368);
-			}
-		}
-		Scene.the.addOther(background);
-		for(i in data.levels[activeLevel].sprites)
-		{
-			var s = SpriteMap.the.get(i.idString);
-			s.x = i.x;
-			s.y = i.y;
-			s.setAnimation(new Animation([i.frame],0));
-			Scene.the.addOther(s);
-		}
-	}
-
-	public function up(mButton:Int, x:Int, y:Int)
-	{
-	}	
-	public function move(x:Int,y:Int,cx:Int,cy:Int)
-	{
-
-	}
-	public function scroll(scroll:Int)
-	{
-
-	}
 	public function update(): Void {
 		Scene.the.update();
 	}

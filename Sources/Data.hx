@@ -22,18 +22,6 @@ class Data {
 			var lvlArr:Array<Dynamic> = cast data.levels;
 			var lvlData = lvlArr[i];
 			levels.push(lvlData);
-			/*
-			levels.push(new LevelData());
-			levels[i].id = lvlData.id;
-			levels[i].days = lvlData.days;
-			levels[i].chats = new Map<String, Array<Dialog>>();
-			for(j in Reflect.fields(lvlData.chats))
-			{
-				levels[i].chats.set(j, Reflect.getProperty(lvlData.chats, j));
-			}
-
-			levels[i].sprites = lvlData.sprites;
-			*/
 		}
 	}
 }
@@ -54,6 +42,7 @@ typedef Dialog = {
 typedef Chat = {
 	var text:String;
 	var chat:String;
+	var cost:Int;
 }
 
 typedef SpriteData = {

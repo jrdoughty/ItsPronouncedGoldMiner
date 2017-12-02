@@ -1,370 +1,419 @@
 {
-
-	"levels":[
+	"levels": [
 		{
-			"id":0,
-			"days":-1,
-			"background":"background",
-			"sprites":[
+			"id": 0,
+			"days": -1,
+			"background": "background",
+			"sprites": [
 				{
-					"idString":"Player",
+					"idString": "Player",
 					"x": 0,
 					"y": 0,
-					"frame":0
+					"frame": 0
 				},
 				{
-					"idString":"Girl1",
+					"idString": "Girl1",
 					"x": 400,
 					"y": 0,
-					"frame":0
+					"frame": 0
 				}
 			],
 			"chats": {
-				"main":[
+				"main": [
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text": "(as he walks in knocking) Hey Girl1! It's Player!",
-								"chat": null
+								"text": "Welcome to the Hole in the Wall...",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text": "Thought I'd pop by for a... Wow, that is purple!",
-								"chat": null
+								"text": "AKA the best restraunt in The Hills",
+								"chat": null,
+								"cost": 0
+							},
+							{
+								"text": "It looks like a place filled with the greesiest food known to man...",
+								"chat": null,
+								"cost": 0
+							},
+							{
+								"text": "And I'm here to assure you it is!",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text": "Good Morning Player!",
-								"chat": null
+								"text": "That sounds disgusting...",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text": "Yes, they asked me what I wanted for decor, and this is what I asked for",
-								"chat": null
+								"text": "If you're trying to impress me, you're going to have to work harder",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text": "Not a big fan of it only being one room though...",
-								"chat": null
+								"text": "Especially when the place looks like this",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "choice",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"How are you doing Girl1?",
-								"chat":"nothingtotell"
+								"text": "Trust me, its better than you would believe!",
+								"chat": "foodisamazing",
+								"cost": 20
 							},
 							{
-								"text":"I got a promotion at work!",
-								"chat":"promotion"
+								"text": "Buy the 'pricey salad' ",
+								"chat": "foodsucks",
+								"cost": 100
 							},
 							{
-								"text":"Is the food any better here?",
-								"chat":"foodsucks"
+								"text": "Maybe this was a bad idea",
+								"chat": "badidea",
+								"cost": 0
 							}
 						]
 					}
 				],
-				"nothingtotell":[
+				"foodisamazing": [
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"How are you doing Girl1?",
-								"chat":null
+								"text": "How are you doing Girl1?",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"Well ok, there's not much for me to do but watch TV. I'm very bored...",
-								"chat":null
+								"text": "Well ok, there's not much for me to do but watch TV. I'm very bored...",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"Well I'd heard you'd had some trouble, you have a doctor's appointment tomorrow",
-								"chat":null
+								"text": "Well I'd heard you'd had some trouble, you have a doctor's appointment tomorrow",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"Yes, your Aunt Shelly is picking me up at... Oh heavens what time is she...",
-								"chat":null
+								"text": "Yes, your Aunt Shelly is picking me up at... Oh heavens what time is she...",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text":"(looks around confused)",
-								"chat":null
+								"text": "(looks around confused)",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"(Sees sticky note on Refrigerator) Here it is...",
-								"chat":null
+								"text": "(Sees sticky note on Refrigerator) Here it is...",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text":"(Pulls up note) 2:30pm, she'll be here not long after lunch.",
-								"chat":null
+								"text": "(Pulls up note) 2:30pm, she'll be here not long after lunch.",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"2:30? Hmmm, I could have sworn it was in the morning... Oh well",
-								"chat":null
+								"text": "2:30? Hmmm, I could have sworn it was in the morning... Oh well",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "choice",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"I got a promotion at work!",
-								"chat":"promotion"
+								"text": "I got a promotion at work!",
+								"chat": "promotion",
+								"cost": 0
 							}
 						]
 					}
 				],
-				"promotion":[
+				"badidea": [
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"I made producer at work!",
-								"chat":null
+								"text": "I made producer at work!",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"That's great Player!",
-								"chat":null
+								"text": "That's great Player!",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text":"I always knew you had it in you!",
-								"chat":null
-							}
-						]
-					},{
-						"type": "dialog",
-						"char":"Player",
-						"texts":[
-							{
-								"text":"I know, thank you for being so supportive",
-								"chat":null
+								"text": "I always knew you had it in you!",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"So what does that mean you'll do?",
-								"chat":null
+								"text": "I know, thank you for being so supportive",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"Means I'll be working with lots of developers on big projects!",
-								"chat":null
+								"text": "So what does that mean you'll do?",
+								"chat": null,
+								"cost": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Player",
+						"texts": [
+							{
+								"text": "Means I'll be working with lots of developers on big projects!",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text":"I get to work with artists, programmers, and testers and help them make great stuff!",
-								"chat":null
+								"text": "I get to work with artists, programmers, and testers and help them make great stuff!",
+								"chat": null,
+								"cost": 0
 							},
 							{
-								"text":"I'll be busy, but I'll still come by often",
-								"chat":null
+								"text": "I'll be busy, but I'll still come by often",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"Well I hope so, hearing about you and the family is my life right now",
-								"chat":null
+								"text": "Well I hope so, hearing about you and the family is my life right now",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"I have to go, I'll be back next week",
-								"chat":"endlevel"
+								"text": "I have to go, I'll be back next week",
+								"chat": "endlevel",
+								"cost": 0
 							}
 						]
 					}
 				],
-				"foodsucks":[
+				"foodsucks": [
 					{
 						"type": "dialog",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"Is the food any better here?",
-								"chat":null
+								"text": "Is the food any better here?",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"Its OK... Nothing to talk about",
-								"chat":null
+								"text": "Its OK... Nothing to talk about",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "choice",
-						"char":"Player",
-						"texts":[
+						"char": "Player",
+						"texts": [
 							{
-								"text":"How are you doing Girl1?",
-								"chat":"nothingtotell"
+								"text": "How are you doing Girl1?",
+								"chat": "nothingtotell",
+								"cost": 0
 							},
 							{
-								"text":"I got a promotion at work!",
-								"chat":"promotion"
+								"text": "I got a promotion at work!",
+								"chat": "promotion",
+								"cost": 0
 							}
 						]
 					}
-					
 				]
 			}
 		},
 		{
-			"id":1,
-			"days":60,
-			"background":"background",
-			"sprites":[
+			"id": 1,
+			"days": 60,
+			"background": "background",
+			"sprites": [
 				{
-					"idString":"Player",
+					"idString": "Player",
 					"x": 160,
 					"y": 180,
-					"frame":0
+					"frame": 0
 				},
 				{
-					"idString":"Girl1",
+					"idString": "Girl1",
 					"x": 240,
 					"y": 140,
-					"frame":3
+					"frame": 3
 				},
 				{
-					"idString":"Vincent",
+					"idString": "Vincent",
 					"x": 209,
 					"y": 140,
-					"frame":2
+					"frame": 2
 				},
 				{
-					"idString":"Mom",
+					"idString": "Mom",
 					"x": 280,
 					"y": 140,
-					"frame":1
+					"frame": 1
 				}
 			],
 			"chats": {
-				"main":[
+				"main": [
 					{
 						"type": "dialog",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
 								"text": "You're running late today",
-								"chat": null
+								"chat": null,
+								"cost": 0
 							},
 							{
 								"text": "Where have you been?",
-								"chat": null
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "choice",
-						"char":"Mom",
-						"texts":[
+						"char": "Mom",
+						"texts": [
 							{
-								"text":"We're always here at 10:30",
-								"chat":"correction"
+								"text": "We're always here at 10:30",
+								"chat": "correction",
+								"cost": 0
 							},
 							{
-								"text":"Sorry Mom",
-								"chat":"letitbe"
+								"text": "Sorry Mom",
+								"chat": "letitbe",
+								"cost": 0
 							},
 							{
-								"text":"Look Who We Have",
-								"chat":"distract"
+								"text": "Look Who We Have",
+								"chat": "distract",
+								"cost": 0
 							}
 						]
 					}
 				],
-				"correction":[
+				"correction": [
 					{
 						"type": "dialog",
-						"char":"Mom",
-						"texts":[
+						"char": "Mom",
+						"texts": [
 							{
-								"text":"We're always here at 10:30 every Saturday",
-								"chat":null
+								"text": "We're always here at 10:30 every Saturday",
+								"chat": null,
+								"cost": 0
 							}
 						]
 					},
 					{
 						"type": "reaction",
-						"char":"Girl1",
-						"texts":[
+						"char": "Girl1",
+						"texts": [
 							{
-								"text":"You're usually here much earlier!",
-								"chat":"defiant"
+								"text": "You're usually here much earlier!",
+								"chat": "defiant",
+								"cost": 0
 							},
 							{
-								"text":"Oh I'm sorry, I'm very tired, and well... bored...",
-								"chat":"correction"
+								"text": "Oh I'm sorry, I'm very tired, and well... bored...",
+								"chat": "correction",
+								"cost": 0
 							},
 							{
-								"text":"Are you? Sorry I'm just sitting here all morning. I've not seen anyone all week",
-								"chat":"correction"
+								"text": "Are you? Sorry I'm just sitting here all morning. I've not seen anyone all week",
+								"chat": "correction",
+								"cost": 0
 							}
 						]
 					}

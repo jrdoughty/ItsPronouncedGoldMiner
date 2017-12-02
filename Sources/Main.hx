@@ -8,9 +8,8 @@ class Main {
 	public static function main() {
 		System.init({title: "Project", width: 800, height: 600}, function () {
 			Assets.loadEverything(function(){
-				var p = new Project();
-				System.notifyOnRender(p.render);
-				Scheduler.addTimeTask(p.update, 0, 1 / 60);
+				System.notifyOnRender(Project.the.render);
+				Scheduler.addTimeTask(Project.the.update, 0, 1 / 60);
 			});
 		});
 	}
