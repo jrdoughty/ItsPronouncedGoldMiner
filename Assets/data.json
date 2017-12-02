@@ -6,13 +6,13 @@
 			"background": "background",
 			"sprites": [
 				{
-					"idString": "Player",
+					"idString": "Goldman",
 					"x": 0,
 					"y": 0,
 					"frame": 0
 				},
 				{
-					"idString": "Girl1",
+					"idString": "Lisa",
 					"x": 400,
 					"y": 0,
 					"frame": 0
@@ -22,69 +22,72 @@
 				"main": [
 					{
 						"type": "dialog",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
 								"text": "Welcome to the Hole in the Wall...",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "AKA the best restraunt in The Hills",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "It looks like a place filled with the greesiest food known to man...",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "And I'm here to assure you it is!",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
 								"text": "That sounds disgusting...",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "If you're trying to impress me, you're going to have to work harder",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Especially when the place looks like this",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "choice",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
 								"text": "Trust me, its better than you would believe!",
 								"chat": "foodisamazing",
-								"cost": 20
+								"cost": 20,
+								"frame": 0
 							},
 							{
 								"text": "Buy the 'pricey salad' ",
 								"chat": "foodsucks",
-								"cost": 100
+								"cost": 100,
+								"frame": 0
 							},
 							{
 								"text": "Maybe this was a bad idea",
 								"chat": "badidea",
-								"cost": 0
+								"cost": 0,
+								"frame":0
 							}
 						]
 					}
@@ -92,88 +95,93 @@
 				"foodisamazing": [
 					{
 						"type": "dialog",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "How are you doing Girl1?",
+								"text": "Trust me, you are going to love it!",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
-								"text": "Well ok, there's not much for me to do but watch TV. I'm very bored...",
+								"text": "Well ok, but just because you sound so excited...",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "Well I'd heard you'd had some trouble, you have a doctor's appointment tomorrow",
+								"text": "Alright, Chicken Tenders with extra crispy fries!",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
-								"text": "Yes, your Aunt Shelly is picking me up at... Oh heavens what time is she...",
+								"text": "Alright...",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
-								"text": "(looks around confused)",
+								"text": "... Not bad",
 								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Player",
-						"texts": [
-							{
-								"text": "(Sees sticky note on Refrigerator) Here it is...",
-								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
-								"text": "(Pulls up note) 2:30pm, she'll be here not long after lunch.",
+								"text": "Actually its pretty good for something that'll give me a heart attack",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "2:30? Hmmm, I could have sworn it was in the morning... Oh well",
+								"text": "I don't think one meal will send you to a stretcher",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
+							},
+							{
+								"text": "Though, I've sworn I went to heaven a few times after eating here",
+								"chat": null,
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
-						"type": "choice",
-						"char": "Player",
+						"type": "dialog",
+						"char": "Lisa",
 						"texts": [
 							{
-								"text": "I got a promotion at work!",
-								"chat": "promotion",
-								"cost": 0
+								"text": "Well, I wouldn't say it was THAT good... but it wasn't bad",
+								"chat": null,
+								"cost": 0, "frame":0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Well, you aren't grossed out, so I'll take it!",
+								"chat": "badidea",
+								"cost": 0, "frame":0
 							}
 						]
 					}
@@ -181,93 +189,23 @@
 				"badidea": [
 					{
 						"type": "dialog",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "I made producer at work!",
+								"text": "lets take you back home",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
-								"text": "That's great Player!",
-								"chat": null,
-								"cost": 0
-							},
-							{
-								"text": "I always knew you had it in you!",
-								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Player",
-						"texts": [
-							{
-								"text": "I know, thank you for being so supportive",
-								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Girl1",
-						"texts": [
-							{
-								"text": "So what does that mean you'll do?",
-								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Player",
-						"texts": [
-							{
-								"text": "Means I'll be working with lots of developers on big projects!",
-								"chat": null,
-								"cost": 0
-							},
-							{
-								"text": "I get to work with artists, programmers, and testers and help them make great stuff!",
-								"chat": null,
-								"cost": 0
-							},
-							{
-								"text": "I'll be busy, but I'll still come by often",
-								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Girl1",
-						"texts": [
-							{
-								"text": "Well I hope so, hearing about you and the family is my life right now",
-								"chat": null,
-								"cost": 0
-							}
-						]
-					},
-					{
-						"type": "dialog",
-						"char": "Player",
-						"texts": [
-							{
-								"text": "I have to go, I'll be back next week",
+								"text": "Sounds like a good idea",
 								"chat": "endlevel",
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					}
@@ -275,39 +213,66 @@
 				"foodsucks": [
 					{
 						"type": "dialog",
-						"char": "Player",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "Is the food any better here?",
+								"text": "And that... is why I bought you the 'Special!'",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
-								"text": "Its OK... Nothing to talk about",
+								"text": "'Special? Is that healthy?'",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
-						"type": "choice",
-						"char": "Player",
+						"type": "dialog",
+						"char": "Goldman",
 						"texts": [
 							{
-								"text": "How are you doing Girl1?",
-								"chat": "nothingtotell",
-								"cost": 0
+								"text": "Sure it is... (and pricey as hell)",
+								"chat": null,
+								"cost": 0, "frame":0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Alright... Why not.",
+								"chat": null,
+								"cost": 0, "frame":0
 							},
 							{
-								"text": "I got a promotion at work!",
-								"chat": "promotion",
-								"cost": 0
+								"text": "Oh my, this is excellent!",
+								"chat": null,
+								"cost": 0, "frame":0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Of course it is!",
+								"chat": null,
+								"cost": 0, "frame":0
+							},
+							{
+								"text": "(It better be for how much I payed)",
+								"chat": "badidea",
+								"cost": 0, "frame":0
 							}
 						]
 					}
@@ -320,45 +285,33 @@
 			"background": "background",
 			"sprites": [
 				{
-					"idString": "Player",
+					"idString": "Goldman",
 					"x": 160,
 					"y": 180,
 					"frame": 0
 				},
 				{
-					"idString": "Girl1",
+					"idString": "Lisa",
 					"x": 240,
 					"y": 140,
 					"frame": 3
-				},
-				{
-					"idString": "Vincent",
-					"x": 209,
-					"y": 140,
-					"frame": 2
-				},
-				{
-					"idString": "Mom",
-					"x": 280,
-					"y": 140,
-					"frame": 1
 				}
 			],
 			"chats": {
 				"main": [
 					{
 						"type": "dialog",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
 								"text": "You're running late today",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Where have you been?",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
@@ -369,17 +322,17 @@
 							{
 								"text": "We're always here at 10:30",
 								"chat": "correction",
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Sorry Mom",
 								"chat": "letitbe",
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Look Who We Have",
 								"chat": "distract",
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					}
@@ -392,28 +345,28 @@
 							{
 								"text": "We're always here at 10:30 every Saturday",
 								"chat": null,
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					},
 					{
 						"type": "reaction",
-						"char": "Girl1",
+						"char": "Lisa",
 						"texts": [
 							{
 								"text": "You're usually here much earlier!",
 								"chat": "defiant",
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Oh I'm sorry, I'm very tired, and well... bored...",
 								"chat": "correction",
-								"cost": 0
+								"cost": 0, "frame":0
 							},
 							{
 								"text": "Are you? Sorry I'm just sitting here all morning. I've not seen anyone all week",
 								"chat": "correction",
-								"cost": 0
+								"cost": 0, "frame":0
 							}
 						]
 					}

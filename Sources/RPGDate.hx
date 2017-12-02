@@ -18,7 +18,7 @@ class RPGDate {
 	var data = Data.the;
 	var chats:Map<String,Dynamic>;
 	var t:Text;
-	var diagnosis:Text = new Text("test",0,360,40);
+	var creditText:Text = new Text("",0,360,40);
 	var buttonsActive:Bool = false;
 	var but = Button.buttons;
 	var activeBG:String = "";
@@ -26,7 +26,7 @@ class RPGDate {
 
 	public function new() 
 	{
-		t = new Text("",0,0,30);
+		t = new Text("",0,456,30);
 		Mouse.get().notify(down, up, move, scroll);
 		startLevel();
 		util.ButtonManager.the;
@@ -52,6 +52,7 @@ class RPGDate {
 				{
 					processChoice();
 				}
+				creditText.content = Project.the.credits+"";
 				checkForEndLevel();
 			}
 		}
@@ -105,12 +106,12 @@ class RPGDate {
 		var theChat:Array<Dynamic> = Reflect.field(chats,chatName);
 		var bs:Array<Button> = [];
 		t.content = "";
-		Project.the.credits -= Std.int(theChat[pointInConvArray].texts[pointInTextArray].cost);
 		for(i in 0...theChat[pointInConvArray].texts.length)
 		{
 			buttonsActive = true;
 			bs.push(new Button(75,100+i*75, 540, 60,new Sprite(Assets.images.button),theChat[pointInConvArray].texts[i].text,function(l:Int,j:Int,k:Int)
 				{
+				Project.the.credits -= Std.int(theChat[pointInConvArray].texts[i].cost);
 					chatName = theChat[pointInConvArray].texts[i].chat;
 					buttonsActive = false;
 					Button.clear();
@@ -141,7 +142,7 @@ class RPGDate {
 
 	private function startLevel()
 	{
-		//diagnosis.content = data.levels[activeLevel].days+" days since Dimentia diagnosis";
+		//creditText.content = data.levels[activeLevel].days+" days since Dimentia creditText";
 		Scene.the.clear();
 		if(data.levels[activeLevel].background != activeBG)
 		{
@@ -149,7 +150,7 @@ class RPGDate {
 			if(background == null)
 			{
 				var imgs = Assets.images;
-				background = new Sprite(Reflect.field(Assets.images, activeBG),457,368);
+				background = new Sprite(Reflect.field(Assets.images, activeBG),Reflect.field(Assets.images, activeBG).width,Reflect.field(Assets.images, activeBG).height);
 			}
 		}
 		Scene.the.addOther(background);
@@ -161,6 +162,7 @@ class RPGDate {
 			s.setAnimation(new Animation([i.frame],0));
 			Scene.the.addOther(s);
 		}
+		creditText.content = Project.the.credits+"";
 	}
 
 	public function up(mButton:Int, x:Int, y:Int)

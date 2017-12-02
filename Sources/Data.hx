@@ -43,6 +43,7 @@ typedef Chat = {
 	var text:String;
 	var chat:String;
 	var cost:Int;
+	var frame:Int;
 }
 
 typedef SpriteData = {
