@@ -20,11 +20,10 @@ class RPGDate extends BaseState
 	var data = Data.the;
 	var chats:Map<String,Dynamic>;
 	var buttonsActive:Bool = false;
-	var but = Button.buttons;
 	var activeBG:String = "";
-	var background:Sprite;
 
-	var dash = new Sprite(Assets.images.wallet,800,285);
+	var background:Sprite;
+	var dash:Sprite;
 	var n:Text;
 	var t:Text;
 	var t2:Text;
@@ -43,7 +42,7 @@ class RPGDate extends BaseState
 		t = new Text("",5,486,30);
 		t2 = new Text("test",5,516,30);
 		creditText = new Text("",5,0,40);
-		dash = new Sprite(Assets.images.wallet,800,285);
+		dash = new Sprite(Assets.images.wallet,800,265);
 	}
 
 	public function down(mButton:Int, x:Int, y:Int)
@@ -83,7 +82,8 @@ class RPGDate extends BaseState
 		if(theChat[pointInConvArray].texts.length > pointInTextArray)
 		{
 			var strs:Array<String> = theChat[pointInConvArray].texts[pointInTextArray].text.split("\n");
-			t.content = theChat[pointInConvArray].char +": "+ strs[0];
+			n.content = theChat[pointInConvArray].char +": ";
+			t.content = strs[0];
 			t2.content = strs.length>1?strs[1]:"";
 			Project.the.credits -= Std.int(theChat[pointInConvArray].texts[pointInTextArray].cost);
 			if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
@@ -185,7 +185,7 @@ class RPGDate extends BaseState
 		}
 		Scene.the.addOther(dash);
 		//creditText.content = Project.the.credits+"";
-		dash.y = 315;
+		dash.y = 335;
 		dash.z = 2;
 	}
 
