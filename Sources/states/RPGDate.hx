@@ -1,4 +1,4 @@
-package;
+package states;
 
 import kha.Framebuffer;
 import kha2d.Scene;
@@ -11,31 +11,39 @@ import kha2d.Animation;
 import util.Button;
 import util.ButtonManager;
 
-class RPGDate {
+class RPGDate extends BaseState
+{
 	var activeLevel:Int = 0;
 	var chatName:String = "main";
 	var pointInConvArray:Int = 0;
 	var pointInTextArray:Int = 0;
 	var data = Data.the;
 	var chats:Map<String,Dynamic>;
-	var t:Text = new Text("",0,456,30);
-	var creditText:Text = new Text("",0,360,40);
 	var buttonsActive:Bool = false;
 	var but = Button.buttons;
 	var activeBG:String = "";
 	var background:Sprite;
-	var dash = new Sprite(Assets.images.dash,800,200);
+
+	var dash = new Sprite(Assets.images.wallet,800,285);
+	var n:Text;
+	var t:Text;
+	var t2:Text;
+	var creditText:Text = new Text("",0,360,40);
 
 	public function new() 
 	{
 		ButtonManager.the;
 	}
 
-	public function init(lvl:Int)
+	public override function init()
 	{
-		activeLevel = lvl;
 		Mouse.get().notify(down, up, move, scroll);
 		startLevel();
+		n = new Text("",5,456,30);
+		t = new Text("",5,486,30);
+		t2 = new Text("test",5,516,30);
+		creditText = new Text("",5,0,40);
+		dash = new Sprite(Assets.images.wallet,800,285);
 	}
 
 	public function down(mButton:Int, x:Int, y:Int)
@@ -74,7 +82,9 @@ class RPGDate {
 		var theChat:Array<Dialog> = Reflect.field(chats,chatName);
 		if(theChat[pointInConvArray].texts.length > pointInTextArray)
 		{
-			t.content = theChat[pointInConvArray].char +": "+ theChat[pointInConvArray].texts[pointInTextArray].text;
+			var strs:Array<String> = theChat[pointInConvArray].texts[pointInTextArray].text.split("\n");
+			t.content = theChat[pointInConvArray].char +": "+ strs[0];
+			t2.content = strs.length>1?strs[1]:"";
 			Project.the.credits -= Std.int(theChat[pointInConvArray].texts[pointInTextArray].cost);
 			if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
 			{
@@ -144,16 +154,11 @@ class RPGDate {
 			chatName = "main";
 			trace("level is now "+activeLevel);
 			var started:Bool = false;
-			for(i in data.levels)
-			{
-				if(i.id == activeLevel)
-				{
-					startLevel();
-					started = true;
-				}
-			}
-			if(!started)
-				Scene.the.clear();
+	
+			startLevel();
+
+			Scene.the.clear();
+
 		}
 	}
 
@@ -166,7 +171,6 @@ class RPGDate {
 			activeBG = data.levels[activeLevel].background;
 			if(background == null)
 			{
-				var imgs = Assets.images;
 				background = new Sprite(Reflect.field(Assets.images, activeBG),Reflect.field(Assets.images, activeBG).width,Reflect.field(Assets.images, activeBG).height);
 			}
 		}
@@ -179,10 +183,10 @@ class RPGDate {
 			s.setAnimation(new Animation([i.frame],0));
 			Scene.the.addOther(s);
 		}
-		dash.y = 400;
-		dash.z = 2;
 		Scene.the.addOther(dash);
 		//creditText.content = Project.the.credits+"";
+		dash.y = 315;
+		dash.z = 2;
 	}
 
 	public function up(mButton:Int, x:Int, y:Int)

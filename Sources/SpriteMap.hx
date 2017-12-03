@@ -17,6 +17,7 @@ class SpriteMap
 	private function new()
 	{
 		spriteMap.set("Goldman",new Sprite(Assets.images.boy,400,575));
+		spriteMap.set("OtherGuy",new Sprite(Assets.images.otherboy,400,575));
 		spriteMap.set("Lisa",new Sprite(Assets.images.girl,400,575));
 		spriteMap.set("Mom",new Sprite(Assets.images.mom,33));
 		spriteMap.set("Vincent",new Sprite(Assets.images.vincent,28));
