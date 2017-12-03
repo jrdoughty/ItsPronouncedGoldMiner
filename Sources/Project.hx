@@ -15,10 +15,12 @@ class Project {
 	
 	public static var the(get, null):Project;
 	public var credits:Int = 1000;
+	public var date:RPGDate = new RPGDate();
+	public var world:World = new World();
 
 	public function new() 
 	{
-		new RPGDate();
+		date.init(0);
 	}
 
 	private static function get_the():Project
@@ -28,6 +30,11 @@ class Project {
 			the = new Project();
 		}
 		return the;
+	}
+
+	public function backToWorld()
+	{
+		world.init();	
 	}
 
 	public function update(): Void {

@@ -20,6 +20,7 @@ class Button
 		background.y = y;
 		background.scaleX = width/background.width;
 		background.scaleY = height/background.height;
+		background.z = 2;
 		//background.z = 10000000;
 		text = new Text(textString, Math.round(x + background.width/10), Math.round(y + background.height/10),Math.round(height*.66));
 		Scene.the.addHero(background);

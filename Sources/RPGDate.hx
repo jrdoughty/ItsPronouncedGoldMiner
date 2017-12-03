@@ -9,6 +9,7 @@ import kha.input.Mouse;
 import Data;
 import kha2d.Animation;
 import util.Button;
+import util.ButtonManager;
 
 class RPGDate {
 	var activeLevel:Int = 0;
@@ -17,19 +18,24 @@ class RPGDate {
 	var pointInTextArray:Int = 0;
 	var data = Data.the;
 	var chats:Map<String,Dynamic>;
-	var t:Text;
+	var t:Text = new Text("",0,456,30);
 	var creditText:Text = new Text("",0,360,40);
 	var buttonsActive:Bool = false;
 	var but = Button.buttons;
 	var activeBG:String = "";
 	var background:Sprite;
+	var dash = new Sprite(Assets.images.dash,800,200);
 
 	public function new() 
 	{
-		t = new Text("",0,456,30);
+		ButtonManager.the;
+	}
+
+	public function init(lvl:Int)
+	{
+		activeLevel = lvl;
 		Mouse.get().notify(down, up, move, scroll);
 		startLevel();
-		util.ButtonManager.the;
 	}
 
 	public function down(mButton:Int, x:Int, y:Int)
@@ -60,6 +66,7 @@ class RPGDate {
 		{
 			trace("chat name is " + chatName +" and buttons are considered "+(buttonsActive?"active":"deactivated"));
 		}
+		dash.visible = !buttonsActive;
 	}
 
 	public function processDialog()
@@ -136,7 +143,17 @@ class RPGDate {
 			activeLevel++;
 			chatName = "main";
 			trace("level is now "+activeLevel);
-			startLevel();
+			var started:Bool = false;
+			for(i in data.levels)
+			{
+				if(i.id == activeLevel)
+				{
+					startLevel();
+					started = true;
+				}
+			}
+			if(!started)
+				Scene.the.clear();
 		}
 	}
 
@@ -162,7 +179,10 @@ class RPGDate {
 			s.setAnimation(new Animation([i.frame],0));
 			Scene.the.addOther(s);
 		}
-		creditText.content = Project.the.credits+"";
+		dash.y = 400;
+		dash.z = 2;
+		Scene.the.addOther(dash);
+		//creditText.content = Project.the.credits+"";
 	}
 
 	public function up(mButton:Int, x:Int, y:Int)
