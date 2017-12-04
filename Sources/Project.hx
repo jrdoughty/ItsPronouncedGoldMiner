@@ -18,6 +18,7 @@ class Project
 	public static var the(get, null):Project;
 	public var activeState:IState;
 	public var credits:Int = 1000;
+	public var points:Map<String, Int> = new Map<String, Int>();
 	public var date:RPGDate = new RPGDate();
 	public var world:World = new World();
 

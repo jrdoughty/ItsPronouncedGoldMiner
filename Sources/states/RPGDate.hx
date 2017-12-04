@@ -37,12 +37,11 @@ class RPGDate extends BaseState
 	public override function init()
 	{
 		Mouse.get().notify(down, up, move, scroll);
-		startLevel();
 		n = new Text("",5,456,30);
 		t = new Text("",5,486,30);
 		t2 = new Text("test",5,516,30);
 		creditText = new Text("",5,0,40);
-		dash = new Sprite(Assets.images.wallet,800,265);
+		startLevel();
 	}
 
 	public function down(mButton:Int, x:Int, y:Int)
@@ -86,6 +85,17 @@ class RPGDate extends BaseState
 			t.content = strs[0];
 			t2.content = strs.length>1?strs[1]:"";
 			Project.the.credits -= Std.int(theChat[pointInConvArray].texts[pointInTextArray].cost);
+			for(i in data.levels[activeLevel].sprites)
+			{
+				if(i.idString != "Goldman")
+				{
+					if(!Project.the.points.exists(i.idString))
+					{
+						Project.the.points.set(i.idString,0);
+					}
+					Project.the.points[i.idString] += theChat[pointInConvArray].texts[pointInTextArray].points;
+				}
+			}
 			if(theChat[pointInConvArray].texts[pointInTextArray].chat != null)
 			{
 				chatName = theChat[pointInConvArray].texts[pointInTextArray].chat;
@@ -156,9 +166,6 @@ class RPGDate extends BaseState
 			var started:Bool = false;
 	
 			startLevel();
-
-			Scene.the.clear();
-
 		}
 	}
 
@@ -183,10 +190,10 @@ class RPGDate extends BaseState
 			s.setAnimation(new Animation([i.frame],0));
 			Scene.the.addOther(s);
 		}
-		Scene.the.addOther(dash);
-		//creditText.content = Project.the.credits+"";
+		dash = new Sprite(Assets.images.wallet,800,265);
 		dash.y = 335;
 		dash.z = 2;
+		Scene.the.addOther(dash);
 	}
 
 	public function up(mButton:Int, x:Int, y:Int)

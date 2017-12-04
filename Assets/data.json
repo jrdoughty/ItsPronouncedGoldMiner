@@ -9,13 +9,15 @@
 					"idString": "Goldman",
 					"x": 0,
 					"y": 0,
-					"frame": 0
+					"frame": 0,
+					"points": 0
 				},
 				{
 					"idString": "OtherGuy",
 					"x": 400,
 					"y": 0,
-					"frame": 0
+					"frame": 0,
+					"points": 0
 				}
 			],
 			"chats": {
@@ -28,7 +30,8 @@
 								"text": "OK, Remind me what we're doing in the ritzy district again?",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -40,19 +43,22 @@
 								"text": "Dating chicks with more money than god man!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "I managed to setup 4 blind dates for each of us!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "Don't Screw this up! Every successful date is another chance to marry rich!",
+								"text": "Don't Screw this up! Every successful \ndate is another chance to marry rich!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -64,7 +70,8 @@
 								"text": "Right... the gold digger sche...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -76,19 +83,22 @@
 								"text": "Gold MINER! It's pronounced Gold MINER!!!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "Jesus man, just hearing 'digger' makes me think fake gold and leopard print and... bleh!",
+								"text": "Jesus man, just hearing 'digger' makes me think \nfake gold and leopard print and... bleh!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "We're better than that!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -100,13 +110,15 @@
 								"text": "What ever you say",
 								"chat": "ahsure",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "This isn't going to work",
 								"chat": "badidea",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -120,7 +132,8 @@
 								"text": "Sure, what ever you say Mr. Miner",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -129,10 +142,11 @@
 						"char": "OtherGuy",
 						"texts": [
 							{
-								"text": "Hey it just takes one of these 4 being a rich chick you can--",
+								"text": "Hey it just takes one of these 4 \nbeing a rich chick you can--",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -144,7 +158,8 @@
 								"text": "Wait, you mean they aren't ALL rich",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -156,19 +171,22 @@
 								"text": "Well I think they... all have a chance... at being rich...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "... Look I didn't pull a miracle here. \nI setup 8 blind dates in the richest part of town",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Odds are good that one of these babes is rich!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -180,13 +198,15 @@
 								"text": "You instill endless... Optimism...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Then again, I haven't had a date at all in a while, so WHAT THE HECK!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -198,7 +218,8 @@
 								"text": "That's the Spirit, now go meet the first one at the Hole in the Wall!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -210,13 +231,15 @@
 								"text": "You're sending me to the worst restraunt in the best part of town...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "You're either the best or worst friend ever...",
 								"chat": "endlevel",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -230,7 +253,8 @@
 								"text": "Why did I let you drag me into this",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -242,7 +266,8 @@
 								"text": "Becuase Game of Thrones isn't on, and you have no life",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -254,7 +279,8 @@
 								"text": "... that stings, and you owe me",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -266,7 +292,8 @@
 								"text": "If this works, You will owe ME!",
 								"chat": "endlevel",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -282,13 +309,15 @@
 					"idString": "Goldman",
 					"x": 0,
 					"y": 0,
-					"frame": 0
+					"frame": 0,
+					"points": 0
 				},
 				{
 					"idString": "Lisa",
 					"x": 400,
 					"y": 0,
-					"frame": 0
+					"frame": 0,
+					"points": 0
 				}
 			],
 			"chats": {
@@ -301,25 +330,29 @@
 								"text": "Welcome to the Hole in the Wall...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "AKA the best restraunt in The Hills",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "It looks like a place filled with the greesiest food known to man...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "And I'm here to assure you it is!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -328,22 +361,59 @@
 						"char": "Lisa",
 						"texts": [
 							{
-								"text": "That sounds disgusting...",
+								"text": "That sounds disgusting...\nthough I suppose I've probably had worse",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "If you're trying to impress me, you're going to have to work harder",
+								"text": "But to be honest, I got a surprise bill today\nwould you be a gentleman?",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "Especially when the place looks like this",
+								"text": "I promise I'll cover a 2nd date",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "(wait, does she mean she's not rich...)",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "(OtherGuy owes me big time)",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "It looks like a place filled with the greesiest food known to man...",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "And I'm here to assure you it is!",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -355,19 +425,22 @@
 								"text": "Trust me, its better than you would believe!",
 								"chat": "foodisamazing",
 								"cost": 20,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Buy the 'pricey salad' ",
 								"chat": "foodsucks",
 								"cost": 100,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Maybe this was a bad idea",
 								"chat": "badidea",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -381,7 +454,8 @@
 								"text": "Trust me, you are going to love it!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -393,7 +467,8 @@
 								"text": "Well ok, but just because you sound so excited...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -405,7 +480,8 @@
 								"text": "Alright, Chicken Tenders with extra crispy fries!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -417,19 +493,22 @@
 								"text": "Alright...",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "... Not bad",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "Actually its pretty good for something that'll give me a heart attack",
+								"text": "Actually its pretty good for something \nthat'll give me a heart attack",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -438,16 +517,18 @@
 						"char": "Goldman",
 						"texts": [
 							{
-								"text": "I don't think one meal will send you to a stretcher",
+								"text": "I don't think one meal will \nsend you to a stretcher",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
-								"text": "Though, I've sworn I went to heaven a few times after eating here",
+								"text": "Though, I've sworn I went to heaven a \nfew times after eating here",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -459,7 +540,8 @@
 								"text": "Well, I wouldn't say it was THAT good... but it wasn't bad",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -469,9 +551,50 @@
 						"texts": [
 							{
 								"text": "Well, you aren't grossed out, so I'll take it!",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 25
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "(I do have enough for desert still...)",
 								"chat": "badidea",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 25
+							}
+						]
+					},
+					{
+						"type": "choice",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Buy Desert",
+								"chat": "dessert",
+								"cost": 20,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "Buy Expensive Wine",
+								"chat": "wine",
+								"cost": 100,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "Call It A Night",
+								"chat": "badidea",
+								"cost": 0,
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -482,10 +605,11 @@
 						"char": "Goldman",
 						"texts": [
 							{
-								"text": "lets take you back home",
+								"text": "Well, I had a great time, \nhow about I take you back",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -497,7 +621,8 @@
 								"text": "Sounds like a good idea",
 								"chat": "endlevel",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -511,7 +636,8 @@
 								"text": "And that... is why I bought you the 'Special!'",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -523,7 +649,8 @@
 								"text": "'Special? Is that healthy?'",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -535,7 +662,8 @@
 								"text": "Sure it is... (and pricey as hell)",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -547,13 +675,15 @@
 								"text": "Alright... Why not.",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Oh my, this is excellent!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -565,13 +695,194 @@
 								"text": "Of course it is!",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "(It better be for how much I payed)",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 40
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Umm, how much was that?",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "choice",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Brag",
+								"chat": "toomuch",
+								"cost": 20,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "Down Play It",
+								"chat": "thanks",
+								"cost": 100,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					}
+				],
+				"toomuch": [
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "About 100 bucks, \nwas it worth it?",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Oh my god, I didn't realize it was so much!",
 								"chat": "badidea",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 5
+							}
+						]
+					}
+				],
+				"thanks": [
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "It was a little pricey, but not bad",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Oh well I really appreciate it",
+								"chat": "badidea",
+								"cost": 0,
+								"frame": 0,
+								"points": 15
+							}
+						]
+					}
+				],
+				"dessert": [
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Care to try the cake?",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Goodness you're going to kill a girl...\nWhy not?",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 15
+							},
+							{
+								"text": "(eats cake)",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "Huh, That was worth the jog I'll have to do later!",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 15
+							},
+							{
+								"text": "I really appreciate you getting that dessert!",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Not a problem, I've had a great time",
+								"chat": "badidea",
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					}
+				],
+				"wine": [
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "It was a little pricey, but not bad",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Oh well I really appreciate it",
+								"chat": "badidea",
+								"cost": 0,
+								"frame": 0,
+								"points": 15
 							}
 						]
 					}
@@ -587,7 +898,8 @@
 					"idString": "Goldman",
 					"x": 160,
 					"y": 180,
-					"frame": 0
+					"frame": 0,
+					"points": 0
 				},
 				{
 					"idString": "Lisa",
@@ -606,13 +918,15 @@
 								"text": "You're running late today",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Where have you been?",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -624,19 +938,22 @@
 								"text": "We're always here at 10:30",
 								"chat": "correction",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Sorry Mom",
 								"chat": "letitbe",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Look Who We Have",
 								"chat": "distract",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
@@ -650,7 +967,8 @@
 								"text": "We're always here at 10:30 every Saturday",
 								"chat": null,
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					},
@@ -662,19 +980,22 @@
 								"text": "You're usually here much earlier!",
 								"chat": "defiant",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Oh I'm sorry, I'm very tired, and well... bored...",
 								"chat": "correction",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							},
 							{
 								"text": "Are you? Sorry I'm just sitting here all morning. I've not seen anyone all week",
 								"chat": "correction",
 								"cost": 0,
-								"frame": 0
+								"frame": 0,
+								"points": 0
 							}
 						]
 					}
