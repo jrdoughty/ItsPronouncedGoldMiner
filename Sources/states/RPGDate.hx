@@ -72,7 +72,7 @@ class RPGDate extends BaseState
 		{
 			trace("chat name is " + chatName +" and buttons are considered "+(buttonsActive?"active":"deactivated"));
 		}
-		dash.visible = !buttonsActive;
+		//dash.visible = !buttonsActive;
 	}
 
 	public function processDialog()
@@ -166,6 +166,11 @@ class RPGDate extends BaseState
 			var started:Bool = false;
 	
 			startLevel();
+		}
+		if(chatName == "endgame")
+		{
+			//Project.the.changeState(new )
+			trace('done');
 		}
 	}
 

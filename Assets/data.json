@@ -3,7 +3,7 @@
 		{
 			"id": 0,
 			"days": -1,
-			"background": "background",
+			"background": "city",
 			"sprites": [
 				{
 					"idString": "Goldman",
@@ -13,7 +13,7 @@
 					"points": 0
 				},
 				{
-					"idString": "OtherGuy",
+					"idString": "Sacks",
 					"x": 400,
 					"y": 0,
 					"frame": 0,
@@ -37,7 +37,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "Dating chicks with more money than god man!",
@@ -77,7 +77,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "Gold MINER! It's pronounced Gold MINER!!!",
@@ -139,7 +139,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "Hey it just takes one of these 4 \nbeing a rich chick you can--",
@@ -165,7 +165,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "Well I think they... all have a chance... at being rich...",
@@ -212,7 +212,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "That's the Spirit, now go meet the first one at the Hole in the Wall!",
@@ -236,6 +236,13 @@
 							},
 							{
 								"text": "You're either the best or worst friend ever...",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "",
 								"chat": "endlevel",
 								"cost": 0,
 								"frame": 0,
@@ -260,7 +267,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "Becuase Game of Thrones isn't on, and you have no life",
@@ -286,7 +293,7 @@
 					},
 					{
 						"type": "dialog",
-						"char": "OtherGuy",
+						"char": "Sacks",
 						"texts": [
 							{
 								"text": "If this works, You will owe ME!",
@@ -315,13 +322,39 @@
 				{
 					"idString": "Lisa",
 					"x": 400,
-					"y": 0,
+					"y": -30,
 					"frame": 0,
 					"points": 0
 				}
 			],
 			"chats": {
 				"main": [
+					{
+						"type": "dialog",
+						"char": "Goldman",
+						"texts": [
+							{
+								"text": "Hi there, I'm Mike, but call me Goldman",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Hi, I'm Lisa. You picked an... interesting location...",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
 					{
 						"type": "dialog",
 						"char": "Goldman",
@@ -348,7 +381,7 @@
 								"points": 0
 							},
 							{
-								"text": "And I'm here to assure you it is!",
+								"text": "And I'll assure you it is!",
 								"chat": null,
 								"cost": 0,
 								"frame": 0,
@@ -361,7 +394,7 @@
 						"char": "Lisa",
 						"texts": [
 							{
-								"text": "That sounds disgusting...\nthough I suppose I've probably had worse",
+								"text": "Heh, well you know how to sell it\nI suppose I've probably had worse",
 								"chat": null,
 								"cost": 0,
 								"frame": 0,
@@ -395,21 +428,48 @@
 								"points": 0
 							},
 							{
-								"text": "(OtherGuy owes me big time)",
+								"text": "(Sacks owes me big time...)",
 								"chat": null,
 								"cost": 0,
 								"frame": 0,
 								"points": 0
 							},
 							{
-								"text": "It looks like a place filled with the greesiest food known to man...",
+								"text": "(but she may be part of a rich family being from around here)",
 								"chat": null,
 								"cost": 0,
 								"frame": 0,
 								"points": 0
 							},
 							{
-								"text": "And I'm here to assure you it is!",
+								"text": "It's no problem",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							}
+						]
+					},
+					{
+						"type": "dialog",
+						"char": "Lisa",
+						"texts": [
+							{
+								"text": "Thanks, I'll let you pick",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "You know the menu better than me apparently.",
+								"chat": null,
+								"cost": 0,
+								"frame": 0,
+								"points": 0
+							},
+							{
+								"text": "Just please don't pick something too... greesey",
 								"chat": null,
 								"cost": 0,
 								"frame": 0,
@@ -422,7 +482,7 @@
 						"char": "Goldman",
 						"texts": [
 							{
-								"text": "Trust me, its better than you would believe!",
+								"text": "Don't worry, its better than you would believe!",
 								"chat": "foodisamazing",
 								"cost": 20,
 								"frame": 0,
@@ -619,7 +679,7 @@
 						"texts": [
 							{
 								"text": "Sounds like a good idea",
-								"chat": "endlevel",
+								"chat": "endgame",
 								"cost": 0,
 								"frame": 0,
 								"points": 0
@@ -888,119 +948,7 @@
 					}
 				]
 			}
-		},
-		{
-			"id": 2,
-			"days": 60,
-			"background": "background",
-			"sprites": [
-				{
-					"idString": "Goldman",
-					"x": 160,
-					"y": 180,
-					"frame": 0,
-					"points": 0
-				},
-				{
-					"idString": "Lisa",
-					"x": 240,
-					"y": 140,
-					"frame": 3
-				}
-			],
-			"chats": {
-				"main": [
-					{
-						"type": "dialog",
-						"char": "Lisa",
-						"texts": [
-							{
-								"text": "You're running late today",
-								"chat": null,
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							},
-							{
-								"text": "Where have you been?",
-								"chat": null,
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							}
-						]
-					},
-					{
-						"type": "choice",
-						"char": "Mom",
-						"texts": [
-							{
-								"text": "We're always here at 10:30",
-								"chat": "correction",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							},
-							{
-								"text": "Sorry Mom",
-								"chat": "letitbe",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							},
-							{
-								"text": "Look Who We Have",
-								"chat": "distract",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							}
-						]
-					}
-				],
-				"correction": [
-					{
-						"type": "dialog",
-						"char": "Mom",
-						"texts": [
-							{
-								"text": "We're always here at 10:30 every Saturday",
-								"chat": null,
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							}
-						]
-					},
-					{
-						"type": "reaction",
-						"char": "Lisa",
-						"texts": [
-							{
-								"text": "You're usually here much earlier!",
-								"chat": "defiant",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							},
-							{
-								"text": "Oh I'm sorry, I'm very tired, and well... bored...",
-								"chat": "correction",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							},
-							{
-								"text": "Are you? Sorry I'm just sitting here all morning. I've not seen anyone all week",
-								"chat": "correction",
-								"cost": 0,
-								"frame": 0,
-								"points": 0
-							}
-						]
-					}
-				]
-			}
 		}
+		
 	]
 }

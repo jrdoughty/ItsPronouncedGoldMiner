@@ -15,16 +15,16 @@ class MenuState extends BaseState
 
 	public override function init()
 	{
-		Scene.the.addOther(new Sprite(Assets.images.background, 800, 600, 0));
+		Scene.the.addOther(new Sprite(Assets.images.intro, 800, 600, 0));
 
-		new Button(100, 100, 120, 30, new Sprite(Assets.images.button), "PLAY", play, 18);
+		new Button(300, 400, 120, 60, new Sprite(Assets.images.button), "PLAY", play, 18);
 
-		new Button(100, 135, 120, 30, new Sprite(Assets.images.button), "HELP", help, 18);
+		//new Button(300, 200, 120, 60, new Sprite(Assets.images.button), "HELP", help, 18);
 		
-		new Button(100, 170, 120, 30, new Sprite(Assets.images.button), "Credits", credits, 18);
+		//new Button(100, 170, 120, 60, new Sprite(Assets.images.button), "Credits", credits, 18);
 
-		new Text("It's Pronounced", 70, 0, 30);
-		new Text("Gold MINER!", 85, 35, 40);
+		new Text("It's Pronounced", 250, 10, 60);
+		new Text("Gold MINER!", 200, 50, 100);
 
 	}
 
